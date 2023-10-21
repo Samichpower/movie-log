@@ -79,6 +79,7 @@ h1 {
 .movie-title {
   font-size: 2.5rem;
   font-weight: bold;
+  display: inline;
 }
 
 .review {
@@ -95,7 +96,6 @@ h1 {
 
 .rating img {
   width: 20%;
-  max-width: 5rem;
   padding: 0.25rem;
 }
 
