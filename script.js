@@ -10,7 +10,8 @@ const movies = [
   },
 ]
 
-const mainContainer = document.querySelector('.main-container');
+
+
 
 function createMovieNode(movie) {
   function getRating() {
@@ -51,17 +52,17 @@ function createMovieNode(movie) {
         </div>
       </div>
     </div>`
-
   return movieInformation;
 }
 
 function formatAllMoviesForPage() {
   let moviesFormatted = '';
-  
+
   for (let i = 0; i < movies.length; i++) {
     moviesFormatted += createMovieNode(movies[i]);
   }
   return moviesFormatted;
 }
 
+const mainContainer = document.querySelector('.main-container');
 mainContainer.innerHTML += formatAllMoviesForPage();
