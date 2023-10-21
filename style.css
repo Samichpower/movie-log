@@ -68,7 +68,7 @@ h1 {
 
 .movie-container {
   display: flex;
-  max-width: 1200px;
+  width: 70vw;
   padding: 35px 25px;
   border-bottom: 1px solid gray;
 }
@@ -78,6 +78,8 @@ h1 {
   width: auto;
   border: 1px solid black;
 }
+
+
 
 .mid-content {
   margin: 0px 30px;
@@ -94,6 +96,8 @@ h1 {
   margin: 10px 0px;
 }
 
+
+
 .side-content {
   display: flex;
   flex-direction: column;
@@ -101,7 +105,9 @@ h1 {
   border: 1px solid black;
   height: fit-content;
   min-width: 15rem;
+  max-width: 15rem;
   padding: 5px;
+  margin-left: auto;
 }
 
 .rating {
