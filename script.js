@@ -7,27 +7,14 @@ const movies = [
     dateWatched: '10.21.2023',
     genre: 'Sci-Fi',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et optio eius eveniet suscipit. Eligendi, reiciendis quae! Ducimus eius iusto eligendi. Provident, quas voluptatem veritatis impedit accusamus doloremque ex aspernatur excepturi, aperiam, dolor totam blanditiis porro laborum eos modi! Repellat delectus, quae quam itaque asperiores illo odio magnam eligendi fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et optio eius eveniet suscipit. Eligendi, reiciendis quae! Ducimus eius iusto eligendi. Provident, quas voluptatem veritatis impedit accusamus doloremque ex aspernatur excepturi, aperiam, dolor totam blanditiis porro laborum eos modi! Repellat delectus, quae quam itaque asperiores illo odio magnam eligendi fuga?',
-  }
+  },
 ]
 
 const mainContainer = document.querySelector('.main-container');
 
-// function createMovieNode(movie) {
-//   const movieContainer = document.createElement('div');
-//   movieContainer.className = 'movie-container';
-
-//   const movieImage = document.createElement('img');
-//   movieImage.className = 'movie-image';
-//   movieImage.src = movie.image;
-//   movieContainer.appendChild(movieImage);
-
-//   mainContainer.appendChild(movieContainer);
-// }
-
 function createMovieNode(movie) {
   function getRating() {
     const rating = movie.rating;
-
     let stars = ''
     
     for (let i = 0; i < 5; i++) {
@@ -68,6 +55,13 @@ function createMovieNode(movie) {
   return movieInformation;
 }
 
-const movie = createMovieNode(movies[0]);
+function formatAllMoviesForPage() {
+  let moviesFormatted = '';
+  
+  for (let i = 0; i < movies.length; i++) {
+    moviesFormatted += createMovieNode(movies[i]);
+  }
+  return moviesFormatted;
+}
 
-mainContainer.innerHTML += movie;
+mainContainer.innerHTML += formatAllMoviesForPage();
