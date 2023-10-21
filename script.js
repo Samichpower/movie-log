@@ -11,6 +11,17 @@ const movies = [
 ]
 
 
+/* TEMPLATE
+{
+  title:
+  yearReleased:
+  image: 'images/',
+  rating:
+  dateWatched:
+  genre:
+  review:
+},
+*/
 
 
 function createMovieNode(movie) {
