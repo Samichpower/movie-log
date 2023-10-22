@@ -1,12 +1,12 @@
 const movies = [
   {
-    title: 'Interstellar',
-    yearReleased: 2014,
-    image: 'images/interstellar.png',
-    rating: 5,
+    title: 'Barbarian',
+    yearReleased: 2022,
+    image: 'images/barbarian.jpg',
+    rating: 3,
     dateWatched: '10.21.2023',
-    genre: 'Sci-Fi',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et optio eius eveniet suscipit. Eligendi, reiciendis quae! Ducimus eius iusto eligendi. Provident, quas voluptatem veritatis impedit accusamus doloremque ex aspernatur excepturi, aperiam, dolor totam blanditiis porro laborum eos modi! Repellat delectus, quae quam itaque asperiores illo odio magnam eligendi fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et optio eius eveniet suscipit. Eligendi, reiciendis quae! Ducimus eius iusto eligendi. Provident, quas voluptatem veritatis impedit accusamus doloremque ex aspernatur excepturi, aperiam, dolor totam blanditiis porro laborum eos modi! Repellat delectus, quae quam itaque asperiores illo odio magnam eligendi fuga?',
+    genre: 'Horror',
+    review: "It was good. The first half was the best, and I feel they revealed the monster too soon. After that, it seemed to sort of fizzle out, and the ending was kind of bad. The rapist character also seemed sort of forced and I'm sort of struggling to really see the point of him. Worth a watch though, still a solid movie.",
   },
 ]
 
